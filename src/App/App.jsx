@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../Utils/Assets/logo.svg';
+import './App.scss';
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This will be my fucking react CV website !!!!! i just need to find a design template to design this website...
         </p>
         <a
           className="App-link"
