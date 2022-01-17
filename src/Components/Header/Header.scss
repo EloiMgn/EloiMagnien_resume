@@ -1,0 +1,17 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  &__right{
+    &--logo{
+      font-family: 'Megrim', sans-serif;
+      font-size: 60px;
+    }
+  }
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
