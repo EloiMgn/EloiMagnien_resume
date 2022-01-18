@@ -1,6 +1,7 @@
 import './App.scss';
 import Header from '../Components/Header/Header';
 import Banner from '../Components/Banner/Banner';
+import Cursorfollower from '../Components/Cursorfollower/Cursorfollower';
 
 const textArray=[
   'Bienvenue !', 
@@ -10,7 +11,7 @@ const textArray=[
 
 const App= () => (
     <div className="App">
-      {/* <Cursorfollower /> */}
+      <Cursorfollower />
       <div className='App__content'>
         <div className='App__content-header'>
           <Header />

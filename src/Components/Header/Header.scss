@@ -2,9 +2,7 @@
 .header{
   display: flex;
   justify-content: space-between;
-  margin-left: $auto-margin*2;
-  margin-right: $auto-margin*2;
-  // margin-top: $auto-margin;
+
   position: fixed;
   width: 100%;
   min-height: 10vh;
@@ -17,7 +15,7 @@
       font-family: 'Megrim', sans-serif;
       font-size: 60px;
       padding: 3px;
-
+      margin-left: $auto-margin*2;
       &__link{
         color: $color-header;
       }
