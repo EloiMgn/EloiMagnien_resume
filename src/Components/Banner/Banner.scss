@@ -1,0 +1,65 @@
+@import '../../Utils/Variables/variables';
+
+.banner {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px;
+  border-radius: 1em;
+  animation-name: banner-transform-keyframes;
+  animation-duration: 2000ms;
+  animation-delay: 0ms;
+  // animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.385, 0.565, 0.100, 1.000);
+  // animation-iteration-count: 0;
+  // transform-origin: 0 0;
+  &__content {
+    display: flex;
+    align-items: center;
+    transform-origin: left 100%;
+    &__portrait {
+      width: 200px;
+      min-width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+
+      &--img {
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &__typedText {
+      min-width: 300px;
+      font-size: 48px;
+      font-family: 'IBM Plex Mono', monospace;
+      color: black;
+      justify-self: center;
+
+    }
+  }
+}
+
+@keyframes banner-transform-keyframes {
+  0% {
+    transform: translate(0px, 1000px) scaleX(0.001) ;
+    background-color: black;
+  }
+  50% {
+    transform: translate(0px, 0px) scaleX(0.001);
+    background-color: black;
+  }
+  100% {
+    transform: translate(0px, 0px) scaleX(1);
+  }
+}
