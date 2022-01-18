@@ -1,0 +1,103 @@
+@import '../../Utils/Variables/variables';
+
+.about{
+  color: $color-text;
+  margin-top: $auto-margin*3;
+  &__title{
+    margin: 0 0 35px 0;
+    &_inner{
+      font-size: 36px;
+    }
+  }
+  &__content{
+    width: 100%;
+    display: flex;
+    border: solid 1px;
+    padding: 20px;
+    animation-name: about-keyframes;
+    transform-origin: left;
+    animation-duration: 1645ms;
+    animation-delay: 2100ms;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+
+    &__pic{
+      width: 200px;
+      min-width: 200px;
+      height: 250px;
+      overflow: hidden;
+      border: groove 3px $color-text;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+    
+      &--img {
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &__desc{
+      display: flex;
+      flex-direction: column;
+      &--intro{
+        margin-bottom: 30px;
+      }
+      &--info-list{
+        display: flex;
+        justify-content: space-around;
+        strong{
+          color: $color-header;
+          font-weight: 800;
+        }
+        a{
+          color: $color-text;
+          &:hover{
+            color: $color-header;
+            font-weight: 800;
+          }
+        }
+      }
+      &--resume{
+        margin-top: 20px;
+        border: solid 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 300px;
+        &:hover{
+          color: $color-header;
+          background-color: $color-header;
+        }
+        &_lnk{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          text-decoration: none;
+          color: $color-text;
+          &:hover{
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes about-keyframes {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}

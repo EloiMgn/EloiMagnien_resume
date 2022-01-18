@@ -4,9 +4,12 @@ import './index.scss';
 import './reset.css';
 import App from './App/App';
 import reportWebVitals from './reportWebVitals';
+import Cursorfollower from './Components/Cursorfollower/Cursorfollower';
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <Cursorfollower />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

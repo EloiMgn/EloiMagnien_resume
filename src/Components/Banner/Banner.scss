@@ -3,63 +3,45 @@
 .banner {
   display: flex;
   background-color: rgba(255, 255, 255, 0.2);
-  justify-content: flex-start;
-  align-items: center;
   padding: 50px;
-  border-radius: 1em;
+  height: 90vh;
   animation-name: banner-transform-keyframes;
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-delay: 0ms;
-  // animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.385, 0.565, 0.100, 1.000);
-  // animation-iteration-count: 0;
-  // transform-origin: 0 0;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
   &__content {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    transform-origin: left 100%;
-    &__portrait {
-      width: 200px;
-      min-width: 200px;
-      height: 200px;
-      overflow: hidden;
-      border-radius: 10em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-right: 30px;
-
-      &--img {
-        display: block;
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-    }
-
+    width: 100%;
     &__typedText {
       min-width: 300px;
       font-size: 48px;
-      font-family: 'IBM Plex Mono', monospace;
-      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: $color-text;
       justify-self: center;
-
+      margin-top: $auto-margin*3;
     }
   }
 }
 
+
 @keyframes banner-transform-keyframes {
   0% {
-    transform: translate(0px, 1000px) scaleX(0.001) ;
+    transform: translate(0px, -1000px) scaleX(0.001) scaleY(1);
     background-color: black;
   }
   50% {
-    transform: translate(0px, 0px) scaleX(0.001);
+    transform: translate(0px, 1000px) scaleX(0.001) scaleY(1);
+    background-color: black;
+  }
+  85% {
+    transform: translate(0px, -100px) scaleX(0.001) scaleY(1);
     background-color: black;
   }
   100% {
-    transform: translate(0px, 0px) scaleX(1);
+    transform: translate(0px, 0px) scaleX(1) scaleY(1);
   }
 }
