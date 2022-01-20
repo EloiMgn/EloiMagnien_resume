@@ -2,7 +2,7 @@ import './Header.scss'
 import ToggleTheme from '../ToggleTheme/ToggleTheme'
 
 const Header = () => (
-  <section id="header" className='header'>
+  <header id="header" className='header'>
     <div className='header__right'>
       <div className='header__right--logo'>
         <a className='header__right--logo__link magic-hover magic-hover__around' href="#section-started">Eloi <strong>MAGNIEN</strong></a>
@@ -29,7 +29,7 @@ const Header = () => (
         <ToggleTheme />
       </div>
     </div>
-  </section>
+  </header>
 )
 
 export default Header

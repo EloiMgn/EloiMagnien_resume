@@ -2,7 +2,7 @@
 
 .about{
   color: var(--font-color);
-  margin-top: $auto-margin*3;
+  margin-top: var(--margin-medium);;
   &__title{
     margin: 0 0 35px 0;
     &_inner{
@@ -13,7 +13,6 @@
     width: 100%;
     display: flex;
     border: solid 1px;
-    padding: 20px;
     animation-name: about-keyframes;
     transform-origin: left;
     animation-duration: 1645ms;
@@ -29,7 +28,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-right: 30px;
+      margin: 30px;
     
       &--img {
         display: block;
@@ -42,6 +41,7 @@
     &__desc{
       display: flex;
       flex-direction: column;
+      margin: 30px;
       &--intro{
         margin-bottom: 30px;
       }

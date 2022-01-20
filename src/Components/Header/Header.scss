@@ -2,10 +2,11 @@
 .header{
   display: flex;
   justify-content: space-between;
-
-  position: fixed;
   width: 100%;
   min-height: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px; 
   &__right{
     width: 50%;
     display: flex;
@@ -15,7 +16,8 @@
       font-family: var(--font-title);
       font-size: var(--fontsize-big);
       padding: 3px;
-      margin-left: $auto-margin*2;
+      margin-left: var(--margin-medium);
+      margin-top: var(--margin-small);
       &__link{
         color: var(--font-color);
         padding: 5px;

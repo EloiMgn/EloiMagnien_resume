@@ -18,15 +18,10 @@ const App = () => {
   return (
     <div id="App" className={`theme-${theme}`}>
       {!is_touch_device() && <MagicMouse /> }
-      <div className='App__content'>
-        <div className='App__content-header'>
-          <Header />
-        </div>
         <div className='App__content-body'>
           <Home textArray={textArray}/>
         </div>
       </div>
-    </div>
   )
 }
 
