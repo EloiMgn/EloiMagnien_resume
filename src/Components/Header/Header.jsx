@@ -1,4 +1,5 @@
 import './Header.scss'
+import ToggleTheme from '../ToggleTheme/ToggleTheme'
 
 const Header = () => (
   <section id="header" className='header'>
@@ -24,6 +25,9 @@ const Header = () => (
           </li>
         </ul>
       </nav>
+      <div className="theme magic-hover magic-hover__around">
+        <ToggleTheme />
+      </div>
     </div>
   </section>
 )

@@ -30,15 +30,26 @@ $auto-margin: 20px;
 @font-face {
   font-family: 'Roboto';
   src: url('../Assets/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../Assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
+
+// #0a3d62
 
 :root {
   /* COLOR */
   --black: #121212;
   --white: #F6F6F7;
-  --primary: #5748D8;
-  --secondary: #51CFDB;  /* [TODO] need to keep it ? */
+  --primary: #0a3d62; 
+  --secondary: #3c6382;
+  --tertiary: #60a3bc;
 
   --dark-gray: #202020;
   --light-gray: #eeeeee;
@@ -56,20 +67,28 @@ $auto-margin: 20px;
   --fontsize-medium: 3rem;
   --fontsize-small: 1.5rem;
 
+  --fontweight-light: 500;
+  --fontweight-bold: 900;
+
   /* OTHER */
   --border-radius-small: 15px;
   --border-radius-big: 25px;
 
   --transition-short: 0.3s;
-  --transition-long: 0.5s
+  --transition-long: 0.5s;
+
+  --margin-small: 10px;
+  --margin-medium:20px;
+  --margin-large: 50px;
 }
 
 
 .theme-light {
-  --color-background: var(--black);
-  // --background-app: url("../assets/img/papyrus.png");
+  --color-background: var(--white);
+  --background-app: url("../Assets/img/topography-light.svg");
   
   --font-color: var(--black);
+  --hover-color: var(--secondary);
 
   --color-card-background: var(--light-gray);
   --color-country-row: var(--white);
@@ -84,9 +103,10 @@ $auto-margin: 20px;
 }
 .theme-dark {
   --color-background: var(--black);
-  // --background-app: url("../assets/img/papyrus-dark.png");
+  --background-app: url("../Assets/img/topography-dark.svg");
 
   --font-color: var(--white);
+  --hover-color: var(--tertiary);
   
   --color-card-background: var(--black);
   --color-country-row: var(--dark-gray);

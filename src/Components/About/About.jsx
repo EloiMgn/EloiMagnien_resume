@@ -19,24 +19,43 @@ const About = () => (
       {/* <!-- desc --> */}
       <div className="about__content__desc">
         <p className="about__content__desc--intro">
-          Je suis un développeur passionné par la conception de sites
-          Web et d&apos;applications. Auparavant agent de voyage en Asie,
-           j&apos;ai profité de la crise touristique due au COVID-19 pour
-           me reconvertir dans le développement web. Je maitrise les
-           langages de base comme le HTML5, CSS3/SASS et javascript
-           mais aussi les frameworks javascript tel que React et
-           la bibliothèque de test jest. J&apos;ai pour objectif
-           de m&apos;épanouir dans ce milieu et d&apos;améliorer
-           le Web en concevant de superbes expériences.
+          Je suis un développeur passionné par la conception de sites Web et
+          d&apos;applications. Auparavant agent de voyage en Asie, j&apos;ai
+          profité de la crise touristique due au COVID-19 pour me reconvertir
+          dans le développement web. Je maitrise les langages de base comme le
+          HTML5, CSS3/SASS et javascript mais aussi les frameworks javascript
+          tel que React et la bibliothèque de test jest. J&apos;ai pour objectif
+          de m&apos;épanouir dans ce milieu et d&apos;améliorer le Web en
+          concevant de superbes expériences.
         </p>
         <ul className="about__content__desc--info-list">
-            <li><strong>Résidence:</strong> France</li>
-            <li><strong>Où me trouver:</strong> Soissons - 02200</li>
-            <li><strong>Découvrir mes projets:</strong> <a href="https://github.com/EloiMgn?tab=repositories" target='_blank' rel="noreferrer">GitHub</a></li>
+          <li className="list">
+            <div className="list__title"><p>Résidence:</p></div>{' '}
+            <div className="list__content"><p>France</p></div>
+          </li>
+          <li className="list">
+            <div className="list__title">Où me trouver:</div>{' '}
+            <div className="list__content"><p>Soissons - 02200</p></div>
+          </li>
+          <li className="list">
+            <div className="list__title"><p>Découvrir mes projets:</p></div>{' '}
+            <div className="list__content">
+              <a
+                className="list__content__link magic-hover magic-hover__around"
+                href="https://github.com/EloiMgn?tab=repositories"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+          </li>
         </ul>
         <div className="about__content__desc--resume magic-hover magic-hover__around">
           <a
-            href={CV} target='_blank' rel="noreferrer"
+            href={CV}
+            target="_blank"
+            rel="noreferrer"
             className="about__content__desc--resume_lnk"
           >
             Télécharger mon CV
@@ -45,7 +64,6 @@ const About = () => (
       </div>
     </div>
   </div>
-
 )
 
 export default About

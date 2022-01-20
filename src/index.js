@@ -4,10 +4,13 @@ import './index.scss'
 import './reset.css'
 import App from './App/App'
 import reportWebVitals from './reportWebVitals'
+import StoreProvider from './Components/Provider/Provider'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StoreProvider>
+      <App />
+    </StoreProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

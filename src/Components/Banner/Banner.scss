@@ -2,7 +2,7 @@
 
 .banner {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.2);
+  // background-color: rgba(255, 255, 255, 0.2);
   padding: 50px;
   height: 90vh;
   animation-name: banner-transform-keyframes;
@@ -18,11 +18,11 @@
     &__typedText {
       min-width: 300px;
       font-size: 48px;
-      font-family: 'Roboto', sans-serif;
+      font-family: var(--font-text);
       font-weight: 700;
-      color: $color-text;
+      color: var(--font-color);
       justify-self: center;
-      margin-top: $auto-margin*3;
+      margin-top: var(--margin-large);
     }
   }
 }

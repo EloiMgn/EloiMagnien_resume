@@ -48,17 +48,6 @@
       &--info-list{
         display: flex;
         justify-content: space-around;
-        strong{
-          color: var(--font-color);
-          font-weight: 800;
-        }
-        a{
-          color: var(--font-color);
-          &:hover{
-            color: var(--font-color);
-            font-weight: 800;
-          }
-        }
       }
       &--resume{
         margin-top: 20px;
@@ -84,7 +73,24 @@
     }
   }
 }
-
+.list{
+  display: flex;
+  align-items: center;
+  &__title{
+    color: var(--secondary);
+    font-weight: var(--fontweight-bold);
+  }
+  &__content{
+    margin-left: var(--margin-small);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__link{
+      padding: 10px;
+    }
+  }
+}
 
 @keyframes about-keyframes {
   0% {

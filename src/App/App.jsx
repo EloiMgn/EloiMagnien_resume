@@ -1,10 +1,10 @@
-import { useContext } from 'react';
+import { useContext } from 'react'
 import { Store } from '../Components/Provider/Provider'
 import './App.scss'
+import Home from '../Pages/Home/Home'
 import Header from '../Components/Header/Header'
-import Banner from '../Components/Banner/Banner'
 import MagicMouse from '../Components/MagicMouse/MagicMouse'
-import { is_touch_device } from '../Utils/utils'
+import { is_touch_device } from '../Utils/tools'
 
 const textArray = [
   'Bienvenue !',
@@ -23,7 +23,7 @@ const App = () => {
           <Header />
         </div>
         <div className='App__content-body'>
-          <Banner textArray={textArray}/>
+          <Home textArray={textArray}/>
         </div>
       </div>
     </div>
