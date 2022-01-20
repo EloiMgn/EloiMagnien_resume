@@ -1,0 +1,43 @@
+@import '../../Utils/Variables/variables';
+
+:root {
+  cursor: none;
+}
+body #magicMouseCursor {
+  position: fixed;
+  border: 1px solid black;
+  border-radius: 50%;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  transition: transform 0.07s, width 0.3s, height 0.3s;
+  pointer-events: none;
+}
+body #magicMouseCursor.cursor-around {
+  border-radius: 15px;
+}
+
+/* point */
+body #magicPointer {
+  height: 5px;
+  width: 5px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: black;
+  z-index: 9999;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: background 0.2s, width 0.2s, height 0.2s;
+}
+body #magicPointer.is-hover {
+  background: black;
+}
+
+
+
+/* Element hover */
+a:hover {
+  cursor: none;
+  color: black;
+}

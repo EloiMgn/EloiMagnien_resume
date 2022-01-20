@@ -1,9 +1,9 @@
 
-import ReactTypingEffect from 'react-typing-effect';
-import './Banner.scss';
-import About from '../About/About';
+import ReactTypingEffect from 'react-typing-effect'
+import './Banner.scss'
+import About from '../About/About'
 
-const Banner = ({textArray}) => (
+const Banner = ({ textArray }) => (
     <div className='banner'>
       <div className='banner__content '>
         <div className='banner__content__typedText'>
@@ -12,7 +12,7 @@ const Banner = ({textArray}) => (
         <About />
       </div>
     </div>
-  
-    );
 
-  export default Banner;
+)
+
+export default Banner

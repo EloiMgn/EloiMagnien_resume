@@ -12,12 +12,13 @@
     justify-content: flex-start;
     align-items: center;
     &--logo{
-      font-family: 'Megrim', sans-serif;
-      font-size: 60px;
+      font-family: var(--font-title);
+      font-size: var(--fontsize-big);
       padding: 3px;
       margin-left: $auto-margin*2;
       &__link{
-        color: $color-header;
+        color: var(--font-color);
+        padding: 5px;
       }
     }
   }
@@ -41,7 +42,8 @@
   &__item{
     padding: 3px;
     &__link{
-      color: $color-header;
+      color: var(--font-color);
+      padding: 10px;
     }
   }
 }

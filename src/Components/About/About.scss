@@ -1,12 +1,12 @@
 @import '../../Utils/Variables/variables';
 
 .about{
-  color: $color-text;
+  color: var(--font-color);
   margin-top: $auto-margin*3;
   &__title{
     margin: 0 0 35px 0;
     &_inner{
-      font-size: 36px;
+      font-size: var(--fontsize-medium);
     }
   }
   &__content{
@@ -24,7 +24,7 @@
       width: 200px;
       min-width: 200px;
       height: 250px;
-      border: groove 3px $color-text;
+      border: groove 3px var(--font-color);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -49,29 +49,25 @@
         display: flex;
         justify-content: space-around;
         strong{
-          color: $color-header;
+          color: var(--font-color);
           font-weight: 800;
         }
         a{
-          color: $color-text;
+          color: var(--font-color);
           &:hover{
-            color: $color-header;
+            color: var(--font-color);
             font-weight: 800;
           }
         }
       }
       &--resume{
         margin-top: 20px;
-        border: solid 3px;
+        // border: solid 3px;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 60px;
         width: 300px;
-        &:hover{
-          color: $color-header;
-          background-color: $color-header;
-        }
         &_lnk{
           display: flex;
           justify-content: center;
@@ -79,7 +75,7 @@
           height: 100%;
           width: 100%;
           text-decoration: none;
-          color: $color-text;
+          color: var(--font-color);
           &:hover{
             font-weight: 800;
           }

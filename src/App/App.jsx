@@ -1,17 +1,23 @@
-import './App.scss';
-import Header from '../Components/Header/Header';
-import Banner from '../Components/Banner/Banner';
-import Cursorfollower from '../Components/Cursorfollower/Cursorfollower';
+import { useContext } from 'react';
+import { Store } from '../Components/Provider/Provider'
+import './App.scss'
+import Header from '../Components/Header/Header'
+import Banner from '../Components/Banner/Banner'
+import MagicMouse from '../Components/MagicMouse/MagicMouse'
+import { is_touch_device } from '../Utils/utils'
 
-const textArray=[
-  'Bienvenue !', 
+const textArray = [
+  'Bienvenue !',
   'Je suis développeur front-End',
   'Je suis spécialisé en React'
-];
+]
 
-const App= () => (
-    <div className="App">
-      <Cursorfollower />
+const App = () => {
+  const { theme } = useContext(Store)
+
+  return (
+    <div id="App" className={`theme-${theme}`}>
+      {!is_touch_device() && <MagicMouse /> }
       <div className='App__content'>
         <div className='App__content-header'>
           <Header />
@@ -21,6 +27,7 @@ const App= () => (
         </div>
       </div>
     </div>
-  );
+  )
+}
 
-export default App;
+export default App
