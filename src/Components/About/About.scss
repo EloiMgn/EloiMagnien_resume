@@ -1,23 +1,24 @@
-@import '../../Utils/Variables/variables';
+@import '../../Utils/Style/variables';
 
 .about{
   color: var(--font-color);
   margin-top: var(--margin-medium);;
   &__title{
-    margin: 0 0 35px 0;
+    margin: 0 0 35px 20px;
     &_inner{
       font-size: var(--fontsize-medium);
     }
   }
   &__content{
-    width: 100%;
+    // width: 100%;
     display: flex;
     border: solid 1px;
-    animation-name: about-keyframes;
-    transform-origin: left;
-    animation-duration: 1645ms;
-    animation-delay: 2100ms;
-    animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    margin: var(--margin-medium);
+    // animation-name: about-keyframes;
+    // transform-origin: left;
+    // animation-duration: 1645ms;
+    // animation-delay: 2100ms;
+    // animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
 
     &__pic{
       width: 200px;

@@ -1,25 +1,21 @@
-import './Home.scss'
+import './Portfolio.scss'
 import Banner from '../../Components/Banner/Banner'
-import About from '../../Components/About/About'
 
 const textArray = [
-  'Bienvenue !',
-  'Front-End',
-  'React/Javascript',
-  'Sass'
+  'Découvrez mes projets'
 ]
 
-const Home = () => {
+const Portfolio = () => {
   return (
     <div id="Home" className="Home">
       <div className='Home__content'>
         <div className='Home__content-body'>
           <Banner textArray={textArray}/>
-          <About />
+          Page Portfolio
         </div>
       </div>
     </div>
   )
 }
 
-export default Home
+export default Portfolio

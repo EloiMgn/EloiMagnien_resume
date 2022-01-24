@@ -7,7 +7,7 @@ const About = () => (
   <div className="about" id="section-about">
     {/* // <!-- title -->  */}
     <div className="about__title">
-      <div className="about__title_inner"> À Propos</div>
+      <div className="about__title_inner"> À propos de moi</div>
     </div>
 
     <div className="about__content">
@@ -25,8 +25,9 @@ const About = () => (
           dans le développement web. Je maitrise les langages de base comme le
           HTML5, CSS3/SASS et javascript mais aussi les frameworks javascript
           tel que React et la bibliothèque de test jest. J&apos;ai pour objectif
-          de m&apos;épanouir dans ce milieu et d&apos;améliorer le Web en
-          concevant de superbes expériences.
+          de m&apos;épanouir dans ce milieu et de concevoir des sites web de qualité.
+          J&apos;aime apprendre et c&apos;est pourquoi j&apos;aimerai par la
+          suite découvrir de nouvelles technologies, notamment celles qui touchent au Back-end.
         </p>
         <ul className="about__content__desc--info-list">
           <li className="list">

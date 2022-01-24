@@ -1,28 +1,26 @@
-@import '../../Utils/Variables/variables';
+@import '../../Utils/Style/variables';
 
 .banner {
   display: flex;
   padding: 50px;
-  height: 90vh;
-  animation-name: banner-transform-keyframes;
-  animation-duration: 3000ms;
-  animation-delay: 0ms;
-  animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  // height: 90vh;
+  // animation-name: banner-transform-keyframes;
+  // animation-duration: 3000ms;
+  // animation-delay: 0ms;
+  // animation-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    &__typedText {
-      min-width: 300px;
-      font-size: 48px;
-      font-family: var(--font-text);
-      font-weight: 700;
-      color: var(--font-color);
-      justify-self: center;
-      margin-top: var(--margin-large);
-    }
+    min-width: 300px;
+    font-size: 48px;
+    font-family: var(--font-text);
+    font-weight: 700;
+    color: var(--font-color);
+    justify-self: center;
+    margin-top: var(--margin-large);
   }
 }
 

@@ -1,25 +1,21 @@
-import './Home.scss'
+import './Career.scss'
 import Banner from '../../Components/Banner/Banner'
-import About from '../../Components/About/About'
 
 const textArray = [
-  'Bienvenue !',
-  'Front-End',
-  'React/Javascript',
-  'Sass'
+  'Découvrez mon Parcours'
 ]
 
-const Home = () => {
+const Career = () => {
   return (
     <div id="Home" className="Home">
       <div className='Home__content'>
         <div className='Home__content-body'>
           <Banner textArray={textArray}/>
-          <About />
+          Page Parcours
         </div>
       </div>
     </div>
   )
 }
 
-export default Home
+export default Career

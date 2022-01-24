@@ -1,7 +1,7 @@
-@import '../Utils/Variables/variables';
+@import '../Utils/Style/variables';
 
 #App {
-  min-height: 150vh;
+  min-height: 120vh;
   font-family: var(--font-text);
   font-size: var(--fontsize-small);
   font-weight: var(--fontweight-light);
@@ -9,19 +9,3 @@
   transition: var(--transition-long);
   background-image: var(--background-app);
 }
-
-// .App {
-//   min-height: 100vh;
-//   &__content{
-//     height: 10vh;
-//     min-height: 100%;
-//     &-header{
-//       min-height: 10vh;
-//       height: 10vh;
-//     }
-//     &-body{
-//       min-height: 90vh;
-//     }
-//   }
-
-// }
